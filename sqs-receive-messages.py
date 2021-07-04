@@ -11,5 +11,5 @@ for mensagem in queue.receive_messages(MessageAttributeNames=['Author']):
          if  autor_nome:
              autor_texto = ' ({0})'.format(autor_nome)
 
-    # Print out the body and author (if set)
+    # Printar a mensagem sobre o autor
     print('Hello, {0}!{1}'.format(mensagem.body,  autor_texto))
